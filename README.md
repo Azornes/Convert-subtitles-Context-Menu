@@ -18,7 +18,10 @@ This application adds options to your Windows context menu for converting subtit
 
 ---
 preview:
+
 ![](https://github.com/Azornes/Convert-subtitles-Context-Menu/blob/main/documentation_images/Preview.gif)
+
+
 
 # 🔥 Features
 
