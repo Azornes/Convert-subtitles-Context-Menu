@@ -11,7 +11,6 @@ set "scriptPath=%path%"
 set "regFile=add_context_menu.reg"
 set "regFileFullPath=%~dp0%regFile%" 
 
-
 set "rootKey=HKEY_CLASSES_ROOT\*\shell"
 set "subShellKey=HKEY_CLASSES_ROOT\*\shell\ConvertSub\shell"
 
@@ -27,7 +26,7 @@ echo %g_%Updating shell extension menu ..%_%
 del "%regFileFullPath%"
 
 
-:: Funkcja do generowania wpisu dla konwersji
+:: Function to generate entry for conversion
 :generateConversionEntry
     SETLOCAL ENABLEDELAYEDEXPANSION
 		set "index=%~1"
@@ -46,8 +45,8 @@ del "%regFileFullPath%"
 	ENDLOCAL
 EXIT /B 0
 
+:: Generating .reg file
 :Setup_Writing
-	:: Generowanie pliku .reg
 	(
 		echo Windows Registry Editor Version 5.00
 		echo.
@@ -68,7 +67,7 @@ EXIT /B 0
 		echo.	
 	) > "%regFileFullPath%"
 
-	:: Wywołanie funkcji dla każdego formatu
+	:: Calling function for each format
 	set "formats=srt vtt scc stl sbv sub_subviewer sub_microdvd ass dfxp ttml smi txt_quicktime lrc csv txt"
 	set "index=1"
 	for %%f in (%formats%) do (
@@ -83,5 +82,5 @@ echo            %r_%Setup fail.
 echo            %w_%Permission denied.
 pause>nul&exit
 
-echo Kontekstowe menu zostało dodane do rejestru.
+echo Context menu has been added to the registry.
 endlocal

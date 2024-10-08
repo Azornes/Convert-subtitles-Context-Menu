@@ -1,6 +1,5 @@
 <?php
 require 'Lib/vendor/autoload.php';
-
 use \Done\Subtitles\Subtitles;
 
 var_dump($argv);
@@ -34,17 +33,13 @@ if ($argc > 2) {
 
     foreach ($extensions as $extension) {
         $outputFile = $inputFolder . DIRECTORY_SEPARATOR . pathinfo($inputFile, PATHINFO_FILENAME) . '.' . $extension;
-
-        // Wykonaj konwersję
         Subtitles::convert($inputFile, $outputFile);
         echo "Conversion finished: $outputFile\n";
 
-        // Teraz zmień rozszerzenie pliku na realExtension
         if (array_key_exists($extension, $formatsMap)) {
             $realExtension = $formatsMap[$extension];
             $newOutputFile = $inputFolder . DIRECTORY_SEPARATOR . pathinfo($inputFile, PATHINFO_FILENAME) . '.' . $realExtension;
 
-            // Zmień nazwę pliku
             if (rename($outputFile, $newOutputFile)) {
                 echo "File renamed to: $newOutputFile\n";
             } else {

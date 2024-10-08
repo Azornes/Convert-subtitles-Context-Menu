@@ -26,4 +26,3 @@ echo "!args!" !extensions!
 
 "%path%\Lib\php\php.exe" -f "%path%\convert_args.php" "!args!" !extensions!
 
-pause
