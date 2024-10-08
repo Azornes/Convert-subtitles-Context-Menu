@@ -1,7 +1,6 @@
-# Convert-subtitles-Context-Menu
-
 <p align="center">
-  <i>Convert subtitle files to various formats directly from your Windows context menu.</i>
+  <h1 align="center">Convert subtitles Context Menu</h1>
+  <p align="center"><i>Convert subtitle files to various formats directly from your Windows context menu.</i></p>
 </p>
 
 <p align="center">
@@ -24,20 +23,15 @@ This application adds options to your Windows context menu for converting subtit
 - Seamless integration with Windows context menu
 - Support for multiple subtitle formats (SRT, VTT, and more)
 - Easy-to-use interface: right-click and convert
-- Fast conversion process
 - Preserves timing and formatting during conversion
-
----
-
-## Desktop App
-Download the desktop app [here](https://github.com/Azornes/Convert-subtitles-Context-Menu/releases)
-Tested on Windows 11.
 
 ---
 
 # 📊 Supported Subtitle Formats
 <details>
 <summary>
+
+> #### For a full list of supported formats, please refer to the [subtitles library documentation](https://github.com/mantas-done/subtitles).
 </summary>
 
 | Format                                                                                                | Extension | Internal format name |
@@ -45,7 +39,6 @@ Tested on Windows 11.
 | [SubRip](https://en.wikipedia.org/wiki/SubRip#SubRip_text_file_format)                                | .srt      | srt                  |
 | [WebVTT](https://en.wikipedia.org/wiki/WebVTT)                                                        | .vtt      | vtt                  |
 | [Scenarist](http://www.theneitherworld.com/mcpoodle/SCC_TOOLS/DOCS/SCC_FORMAT.HTML)                   | .scc      | scc                  |
-| [EBU STL (only reader)](https://tech.ebu.ch/docs/tech/tech3264.pdf)                                   | .stl      | ebu_stl              |
 | [Spruce Technologies SubTitles](https://pastebin.com/ykGM9qjZ)                                        | .stl      | stl                  |
 | [Youtube Subtitles](https://webdev-il.blogspot.lt/2010/01/sbv-file-format-for-youtube-subtitles.html) | .sbv      | sbv                  |
 | [SubViewer](https://wiki.videolan.org/SubViewer)                                                      | .sub      | sub_subviewer        |
@@ -55,30 +48,20 @@ Tested on Windows 11.
 | [TTML](https://en.wikipedia.org/wiki/Timed_Text_Markup_Language)                                      | .ttml     | ttml                 |
 | [SAMI](https://en.wikipedia.org/wiki/SAMI)                                                            | .smi      | smi                  |
 | QuickTime                                                                                             | .qt.txt   | txt_quicktime        |
-| Rich text format (only reader)                                                                        | .rtf      | rtf                  |
-| DOCX (only reader)                                                                                    | .docx     | docx                 |
 | [LyRiCs](https://en.wikipedia.org/wiki/LRC_(file_format))                                             | .lrc      | lrc                  |
 | Comma separated values                                                                                | .csv      | csv                  |
 | Plaintext                                                                                             | .txt      | txt                  |
 
 </details>
 
-
-For a full list of supported formats, please refer to the [subtitles library documentation](https://github.com/mantas-done/subtitles).
-
-
-
----
-## Dependencies
-1. [PHP 8.3](https://windows.php.net/download#php-8.3)
-2. [Subtitles library](https://github.com/mantas-done/subtitles)
-
----
-
 # 🚀 Installation
 
 1. Download the latest release from the [releases page](https://github.com/Azornes/Convert-subtitles-Context-Menu/releases).
-2. Run the .reg.
+2. Run the ConvertSubInstall.bat
+
+To uninstall, run the ConvertSubUninstall.reg file.
+
+Note: The program might stop working if you move the folder after installation.
 
 # 🛠 Usage
 
@@ -86,6 +69,10 @@ For a full list of supported formats, please refer to the [subtitles library doc
 2. Navigate to the "Convert Subtitles" submenu.
 3. Choose the desired output format.
 4. The converted file will be saved in the same directory as the original file.
+
+# 🧩 Dependencies
+1. [PHP 8.3](https://windows.php.net/download#php-8.3)
+2. [Subtitles library](https://github.com/mantas-done/subtitles)
 
 # 🧑‍💻 Building from Source
 
@@ -116,7 +103,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 # 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/Azornes/Convert-subtitles-Context-Menu/blob/main/LICENSE.md) file for details.
 
 # 📞 Support
 

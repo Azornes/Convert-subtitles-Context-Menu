@@ -20,5 +20,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-The Release included [PHP 8.3 binaries](https://windows.php.net/download#php-8.3) are licensed under the PHP License v3.01 - see the PHP LICENSE for details.
+The Release included [PHP 8.3 binaries](https://windows.php.net/download#php-8.3) are licensed under the PHP License v3.01 - see the [PHP LICENSE](https://www.php.net/license/3_01.txt) for details.
+
 The Release included [mantas-done files](https://github.com/mantas-done/subtitles) are licensed under the MIT License v3.01 - see the MIT LICENSE for details.
