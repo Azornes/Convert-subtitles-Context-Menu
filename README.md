@@ -96,6 +96,11 @@ If you prefer to build the project from source, follow these steps:
    composer install
    ```
 6. Move files from the directory where you installed PHP to Convert-subtitles-Context-Menu\Lib\php, OR edit the convert_subs.bat file to point to your PHP installation.
+If PHP is in your system's environment variables, you can find its location by running the following command in the command prompt:
+   ```
+   where php.exe
+   ```
+
 
 # 🤝 Contributing
 
