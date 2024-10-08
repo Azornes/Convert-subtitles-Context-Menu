@@ -8,9 +8,6 @@
    <a href="https://github.com/Azornes/Convert-subtitles-Context-Menu/releases">
     <img alt="Downloads" src="https://img.shields.io/github/downloads/Azornes/Convert-subtitles-Context-Menu/total?label=Downloads&style=flat-square">
    </a>
-   <a href="https://github.com/Azornes/Convert-subtitles-Context-Menu">
-    <img alt="Visitors" src="https://shields-io-visitor-counter.herokuapp.com/badge?page=Azornes.Convert-subtitles-Context-Menu&color=1D70B8&logo=GitHub&logoColor=FFFFFF&style=flat-square">
-   </a>
   <a href="https://www.php.net/">
     <img alt="PHP 8.3" src="https://img.shields.io/badge/PHP-8.3-777BB4?logo=PHP&logoColor=FFFFFF&style=flat-square">
    </a>
@@ -20,6 +17,8 @@
 
 This application adds options to your Windows context menu for converting subtitle files to various formats. It leverages the [subtitles](https://github.com/mantas-done/subtitles) library for conversion operations.
 
+---
+
 # 🔥 Features
 
 - Seamless integration with Windows context menu
@@ -28,9 +27,46 @@ This application adds options to your Windows context menu for converting subtit
 - Fast conversion process
 - Preserves timing and formatting during conversion
 
+---
+
 ## Desktop App
 Download the desktop app [here](https://github.com/Azornes/Convert-subtitles-Context-Menu/releases)
-Tested on Windows 10 and Windows 11.
+Tested on Windows 11.
+
+---
+
+# 📊 Supported Subtitle Formats
+<details>
+<summary>
+</summary>
+
+| Format                                                                                                | Extension | Internal format name |
+|-------------------------------------------------------------------------------------------------------|-----------|----------------------|
+| [SubRip](https://en.wikipedia.org/wiki/SubRip#SubRip_text_file_format)                                | .srt      | srt                  |
+| [WebVTT](https://en.wikipedia.org/wiki/WebVTT)                                                        | .vtt      | vtt                  |
+| [Scenarist](http://www.theneitherworld.com/mcpoodle/SCC_TOOLS/DOCS/SCC_FORMAT.HTML)                   | .scc      | scc                  |
+| [EBU STL (only reader)](https://tech.ebu.ch/docs/tech/tech3264.pdf)                                   | .stl      | ebu_stl              |
+| [Spruce Technologies SubTitles](https://pastebin.com/ykGM9qjZ)                                        | .stl      | stl                  |
+| [Youtube Subtitles](https://webdev-il.blogspot.lt/2010/01/sbv-file-format-for-youtube-subtitles.html) | .sbv      | sbv                  |
+| [SubViewer](https://wiki.videolan.org/SubViewer)                                                      | .sub      | sub_subviewer        |
+| [MicroDVD](https://en.wikipedia.org/wiki/MicroDVD)                                                    | .sub      | sub_microdvd         |
+| Advanced Sub Station                                                                                  | .ass      | ass                  |
+| [Netflix Timed Text](https://en.wikipedia.org/wiki/Timed_Text_Markup_Language)                        | .dfxp     | dfxp                 |
+| [TTML](https://en.wikipedia.org/wiki/Timed_Text_Markup_Language)                                      | .ttml     | ttml                 |
+| [SAMI](https://en.wikipedia.org/wiki/SAMI)                                                            | .smi      | smi                  |
+| QuickTime                                                                                             | .qt.txt   | txt_quicktime        |
+| Rich text format (only reader)                                                                        | .rtf      | rtf                  |
+| DOCX (only reader)                                                                                    | .docx     | docx                 |
+| [LyRiCs](https://en.wikipedia.org/wiki/LRC_(file_format))                                             | .lrc      | lrc                  |
+| Comma separated values                                                                                | .csv      | csv                  |
+| Plaintext                                                                                             | .txt      | txt                  |
+
+</details>
+
+
+For a full list of supported formats, please refer to the [subtitles library documentation](https://github.com/mantas-done/subtitles).
+
+
 
 ---
 ## Dependencies
@@ -39,25 +75,10 @@ Tested on Windows 10 and Windows 11.
 
 ---
 
-# 📊 Supported Subtitle Formats
-
-| Format | Extension | Read | Write |
-|--------|-----------|------|-------|
-| SubRip | .srt      | ✅    | ✅     |
-| WebVTT | .vtt      | ✅    | ✅     |
-| LRC    | .lrc      | ✅    | ✅     |
-| SCC    | .scc      | ✅    | ✅     |
-| TXT    | .txt      | ✅    | ✅     |
-
-For a full list of supported formats, please refer to the [subtitles library documentation](https://github.com/mantas-done/subtitles).
-
----
-
 # 🚀 Installation
 
 1. Download the latest release from the [releases page](https://github.com/Azornes/Convert-subtitles-Context-Menu/releases).
-2. Run the installer and follow the on-screen instructions.
-3. Restart your computer to ensure the context menu is updated.
+2. Run the .reg.
 
 # 🛠 Usage
 
@@ -71,17 +92,23 @@ For a full list of supported formats, please refer to the [subtitles library doc
 If you prefer to build the project from source, follow these steps:
 
 1. Ensure you have [PHP 8.3](https://windows.php.net/download#php-8.3) installed on your system.
-2. Clone the repository:
+2. Install Composer (if not already installed) from [getcomposer.org](https://getcomposer.org/).
+3. Clone the repository:
    ```
-   git clone https://github.com/Azornes/Convert-subtitles-Context-Menu.git
+   git clone https://github.com/Azornes/Convert-subtitles-Context-Menu.git Convert-subtitles-Context-Menu
    cd Convert-subtitles-Context-Menu
    ```
-3. Install Composer (if not already installed) from [getcomposer.org](https://getcomposer.org/).
-4. Install dependencies:
+
+4. Clone the repository [mantas-done/subtitles](https://github.com/mantas-done/subtitles):
+   ```
+   git clone https://github.com/mantas-done/subtitles.git Lib
+   cd Lib
+   ```
+5. Install dependencies:
    ```
    composer install
    ```
-5. Compile the project (specific instructions may vary based on your build process).
+6. Move files from the directory where you installed PHP to Convert-subtitles-Context-Menu\Lib\php, OR edit the convert_subs.bat file to point to your PHP installation.
 
 # 🤝 Contributing
 
