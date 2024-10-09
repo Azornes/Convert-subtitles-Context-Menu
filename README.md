@@ -17,6 +17,11 @@
 This application adds options to your Windows context menu for converting subtitle files to various formats. It leverages the [subtitles](https://github.com/mantas-done/subtitles) library for conversion operations.
 
 ---
+preview:
+
+![](https://github.com/Azornes/Convert-subtitles-Context-Menu/blob/main/documentation_images/Preview.gif)
+
+
 
 # 🔥 Features
 
