@@ -5,7 +5,7 @@
 
 <p align="center">
    <a href="https://github.com/Azornes/Convert-subtitles-Context-Menu/releases">
-    <img alt="Downloads" src="https://img.shields.io/github/downloads/Azornes/Convert-subtitles-Context-Menu/total?label=Downloads&style=flat-square">
+    <img alt="Downloads" src="https://img.shields.io/github/downloads/Azornes/Convert-subtitles-Context-Menu/latest/total?label=Downloads&style=flat-square">
    </a>
   <a href="https://www.php.net/">
     <img alt="PHP 8.3" src="https://img.shields.io/badge/PHP-8.3-777BB4?logo=PHP&logoColor=FFFFFF&style=flat-square">
