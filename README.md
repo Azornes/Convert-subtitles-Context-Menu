@@ -34,8 +34,8 @@ preview:
 ---
 
 # 📊 Supported Subtitle Formats
-<details>
-<summary>
+<details closed>
+<summary><span style="font-size: 12px; font-weight: bold"> Show Table </span>
 
 > #### For a full list of supported formats, please refer to the [subtitles library documentation](https://github.com/mantas-done/subtitles).
 </summary>
