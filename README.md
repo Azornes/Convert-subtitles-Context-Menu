@@ -66,8 +66,8 @@ preview:
 2. Run the ConvertSubInstall.bat
 
 To uninstall, run the ConvertSubUninstall.reg file.
-
-Note: The program might stop working if you move the folder after installation.
+> [!CAUTION]
+> The program might stop working if you move the folder after installation.
 
 # 🛠 Usage
 
